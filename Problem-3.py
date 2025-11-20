@@ -1,16 +1,18 @@
 a = int(input("Enter a number: "))
 
-# If even, reduce by 1 to nearest odd
+# Determine how many odd numbers to print
 if a % 2 == 0:
-    limit = a - 1
+    count = a - 1
 else:
-    limit = a
+    count = a
 
 result = []
+value = 1
 
-# Generate odd numbers 1, 3, 5, ... <= limit
-for num in range(1, limit + 1, 2):
-    result.append(num)
+for i in range(count):
+    result.append(value)
+    value += 2
 
 print(result)
+
 
